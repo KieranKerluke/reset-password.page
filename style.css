@@ -1,0 +1,133 @@
+/* Global styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif; /* Smooth, modern font */
+    background: #f4f4f4; /* Light background */
+}
+
+/* Custom properties for easy adjustments */
+:root {
+    --blue: #3897F0;
+    --blue-hover: rgb(48, 144, 233);
+    --border-radius: 10px;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --gray-light: #f7f7f7;
+    --gray-medium: #efefef;
+    --gray-dark: #a1a1a1;
+    --text-dark: #222;
+    --font-size-base: 16px;
+}
+
+/* Login form container */
+.login {
+    background: #fff;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 40px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 20px;
+}
+
+/* Heading and instructions */
+.First {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+}
+
+.Second {
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--gray-dark);
+    margin-bottom: 30px;
+}
+
+/* Input Fields */
+input[type="password"] {
+    background: var(--gray-light);
+    border: 2px solid var(--gray-medium);
+    border-radius: 8px;
+    padding: 15px;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input[type="password"]::placeholder {
+    color: var(--gray-dark);
+}
+
+input[type="password"]:focus {
+    border-color: var(--blue);
+    outline: none;
+}
+
+/* Submit Button */
+.Send {
+    background: var(--blue);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    width: 100%;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.Send:hover {
+    background-color: var(--blue-hover);
+}
+
+.Send:focus {
+    outline: none;
+}
+
+/* Form validation and error message */
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .login {
+        padding: 20px;
+        width: 90%;
+        margin-top: 40px;
+    }
+
+    .First {
+        font-size: 16px;
+    }
+
+    .Second {
+        font-size: 13px;
+    }
+
+    input[type="password"] {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .Send {
+        font-size: 14px;
+        padding: 12px;
+    }
+}
