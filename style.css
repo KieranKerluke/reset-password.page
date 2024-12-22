@@ -3,8 +3,8 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif; /* Smooth, modern font */
-    background: #f4f4f4; /* Light background */
+    font-family: 'Poppins', sans-serif;
+    background: #f4f4f4;
 }
 
 /* Custom properties for easy adjustments */
@@ -17,7 +17,6 @@ html, body {
     --gray-medium: #efefef;
     --gray-dark: #a1a1a1;
     --text-dark: #222;
-    --font-size-base: 16px;
 }
 
 /* Login form container */
@@ -98,13 +97,6 @@ input[type="password"]:focus {
     outline: none;
 }
 
-/* Form validation and error message */
-.error {
-    color: red;
-    font-size: 14px;
-    margin-top: 10px;
-}
-
 /* Mobile responsiveness */
 @media screen and (max-width: 768px) {
     .login {
@@ -129,5 +121,29 @@ input[type="password"]:focus {
     .Send {
         font-size: 14px;
         padding: 12px;
+    }
+}
+
+/* Smaller devices (phones in portrait mode) */
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    .First {
+        font-size: 14px;
+    }
+
+    .Second {
+        font-size: 12px;
+    }
+
+    input[type="password"], .Send {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .login {
+        padding: 15px;
     }
 }
